@@ -4,8 +4,8 @@
 <li>Все тесты реализованы с использованием шаблона <i>PageObject</i></li>
 <li>Разработаны на <i>Python</i></li>
 <li>Запускаются из <i>Jenkins</i></li>
-<li>Для запуска браузера используется <i>Selenoid</i></li>
 <li>В результате генерируется отчет при помощи <i>Allure</i> и отправляется нотифкация в <i>Telegram</i></li>
+<li>Готовый отчет, а также тест-кйсы доступны в <i>Allure TestOps</i></li>
 </ul>
 </h6>
 
@@ -25,7 +25,6 @@
     <img title="Selenium" width="40" src="resources/images/selenium.png">
     <img title="Selene" width="40" src="resources/images/selene.png">
     <img title="Jenkins" width="40" height="40" src="resources/images/jenkins-original.svg">
-    <img title="Selenoid" width="40" src="resources/images/selenoid.png">
     <img title="Allure" width="40" src="resources/images/allure.png">
     <img title="AllureTestOps" width="40" src="resources/images/allure_testops.svg">
     <img title="Github" width="40" src="resources/images/github-original-wordmark.svg">
@@ -36,21 +35,11 @@
 
 <h2 id="tests">Автоматизированные тесты</h2>
 <ul>
-<li>Попытка регистрации с неправильным email</li>
-<li>Попытка входа без логина и пароля</li>
-<li>Поиск по базе знаний</li>
-<li>Фильтрация в разделе Аналитика</li>
-<li>Попытка добавления канала без ссылки</li>
-<li>Проверка, что вразделе FAQ отображается нужный текст</li>
-<li>Проверка загрузки горячих предложений</li>    
-</ul>
-
----
-
-<h2 id="tests">Ручные тесты</h2>
-<ul>
-<li>Переключение чекбокса с "Заказчикам" на "Владельцу канала"</li>
-<li>Переключение чекбокса с "Владельцу канала" на "Заказчикам"</li>    
+<li>Добавление в корзину одного товара</li>
+<li>Добавление в корзину двух одинаковых товаров</li>
+<li>Добавление в корзину со страницы товара с выбором доп. характеристик</li>
+<li>Получение всех предметов в корзине</li>
+<li>Удаление предмета из корзины</li>
 </ul>
 
 ---
@@ -70,12 +59,8 @@
 
 <h3>Jenkins</h3>
 
-https://jenkins.autotests.cloud/job/C012-MiledyDarkness_qa_guru_22_telega_ui/
+https://jenkins.autotests.cloud/job/C012-MiledyDarkness_qa_guru_22_demowebshop_api/
 <img src="resources/images/job_in_jenkins.jpg" height="300">
-
-#### История запусков тестового набора
-https://jenkins.autotests.cloud/job/C012-MiledyDarkness_qa_guru_22_telega_ui/allure/
-<img src="resources/images/history_of_runs.jpg" height="300">
 
 #### Пример выполнения одного теста
 <img src="resources/images/example_of_run.jpg" height="300">
@@ -95,6 +80,3 @@ https://allure.autotests.cloud/project/4277/dashboards
 #### Сообщение в телеграмм 
 <img src="resources/images/tg_notifications.jpg" height="300">
 
-#### Видео
-![](resources/images/test_analytics_filter.gif)
----
