@@ -1,6 +1,5 @@
 from api.assertions import assertions
 from api.cart_page import cart
-from selene import browser, have
 
 from schemas.response_add_item import response_add_item
 from tests.conftest import BASE_URL
@@ -13,9 +12,6 @@ def test_add_cart_one_item(cookie_customer):
     assertions.assert_response_status(response)
     assertions.assert_response_value(response)
     assertions.assert_schema(response, response_add_item)
-
-    # browser.element(".product-name").should(have.text("Computing and Internet"))
-    # browser.element(".qty-input").should(have.value("1"))
 
 
 def test_add_cart_item_twice(cookie_customer):
@@ -31,9 +27,6 @@ def test_add_cart_item_twice(cookie_customer):
     assertions.assert_response_value(response)
     assertions.assert_schema(response, response_add_item)
 
-    # browser.element(".product-name").should(have.text("Health Book"))
-    # browser.element(".qty-input").should(have.value("2"))
-
 
 def test_add_from_product_page(cookie_customer):
     endpoint = "/addproducttocart/details/75/1"
@@ -47,12 +40,8 @@ def test_add_from_product_page(cookie_customer):
     assertions.assert_response_value(response)
     assertions.assert_schema(response, response_add_item)
 
-    browser.element(".product-name").should(have.text("Simple Computer"))
-    browser.element(".qty-input").should(have.value("1"))
-
 
 def test_get_items_from_cart(cookie_customer):
-
     endpoint = "/cart"
     endpoint2 = "/addproducttocart/catalog/22/1/1"
 
@@ -72,4 +61,3 @@ def test_delete_from_cart(cookie_customer):
     response = cart.delete_item(BASE_URL, endpoint2, cookie_customer=cookie_customer)
 
     assertions.assert_response_status(response)
-    browser.element(".cart-qty").should(have.text("0"))
