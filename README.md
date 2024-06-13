@@ -60,23 +60,23 @@
 <h3>Jenkins</h3>
 
 https://jenkins.autotests.cloud/job/C012-MiledyDarkness_qa_guru_22_demowebshop_api/
-<img src="resources/images/job_in_jenkins.jpg" height="300">
+<img src="resources/images/job_in_jenkins.jpg" height="500">
 
 #### Пример выполнения одного теста
-<img src="resources/images/example_of_run.jpg" height="300">
+<img src="resources/images/example_of_run.jpg" height="500">
 
 ---
 <h3>Allure TestOps</h3>
 
 https://allure.autotests.cloud/project/4277/dashboards
 
-<img src="resources/images/allure_testops_job.jpg" height="300">
+<img src="resources/images/allure_testops_job.jpg" height="500">
 
 #### Совместное хранение ручных и автоматизированных тест-кейсов
-<img src="resources/images/allure_testops_cases.jpg" height="300">
+<img src="resources/images/allure_testops_cases.jpg" height="500">
 
 ---
 
 #### Сообщение в телеграмм 
-<img src="resources/images/tg_notifications.jpg" height="300">
+<img src="resources/images/tg_notifications.jpg" height="500">
 
