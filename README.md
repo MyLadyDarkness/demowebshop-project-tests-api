@@ -50,7 +50,7 @@
     python -m venv .venv
     source .venv/bin/activate
     pip install -r requirements.txt
-    pytest ${TESTS_FOLDER} || true
+    pytest ${TESTS_FOLDER}
 </pre>
 
 ---

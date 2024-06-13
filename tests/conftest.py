@@ -1,14 +1,19 @@
 import allure
 import pytest
 
-from utils.helper import api_request
+from qa_guru_22_final_tests_api.utils.helper import api_request
 
-BASE_URL = 'https://demowebshop.tricentis.com'
+
+@pytest.fixture(scope='function', autouse=True)
+def base_url():
+    base_url = 'https://demowebshop.tricentis.com'
+    return base_url
+
 
 @pytest.fixture(scope='function', autouse=False)
-def cookie_customer():
+def cookie_customer(base_url):
     with allure.step('Получение cookie посетителя'):
-        result = api_request(url=BASE_URL, endpoint="", method="GET")
+        result = api_request(url=base_url, endpoint="", method="GET")
         cookie_customer = result.cookies.get('Nop.customer')
 
     yield cookie_customer

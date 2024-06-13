@@ -1,5 +1,5 @@
 import allure
-from utils.helper import api_request
+from qa_guru_22_final_tests_api.utils.helper import api_request
 
 
 class Cart:

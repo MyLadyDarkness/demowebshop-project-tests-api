@@ -18,7 +18,7 @@ def api_request(url, endpoint, method, data=None, params=None, cookies=None):
 def response_logging(response: Response):
     logging.info("Request: " + response.request.url)
     if response.request.body:
-        logging.info("INFO Request body: " + response.request.body)  # логирование тела запроса если оно есть
+        logging.info("INFO Request body: " + response.request.body)
     logging.info("Request headers: " + str(response.request.headers))
     logging.info("Response code " + str(response.status_code))
     logging.info("Response: " + response.text)
@@ -31,7 +31,7 @@ def response_attaching(response: Response):
         attachment_type=AttachmentType.TEXT,
     )
 
-    if response.request.body:  # логирование тела запроса если оно есть
+    if response.request.body:
         allure.attach(
             body=json.dumps(response.request.body, indent=4, ensure_ascii=True),
             name="Request body",
