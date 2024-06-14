@@ -1,5 +1,5 @@
-from qa_guru_22_final_tests_api.utils.assertions import assertions
-from qa_guru_22_final_tests_api.pages.cart_page import cart
+from demowebshop_project_tests_api.utils.assertions import assertions
+from demowebshop_project_tests_api.pages.cart_page import cart
 from schemas.response_add_item import response_add_item
 
 

@@ -1,7 +1,7 @@
 import allure
 import pytest
 
-from qa_guru_22_final_tests_api.utils.helper import api_request
+from demowebshop_project_tests_api.utils.helper import api_request
 
 
 @pytest.fixture(scope='function', autouse=True)
